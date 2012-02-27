@@ -5,7 +5,9 @@ gem 'jquery-rails',           '~> 2.0.0'
 gem 'rails-boilerplate',      '~> 0.1.6'
 gem 'pg',                     '~> 0.13.1'
 gem 'slim',                   '~> 1.1.0'
+gem 'activeadmin'
 gem 'thin'
+
 
 group :assets do
   gem 'sass-rails',           '~> 3.2.3'
