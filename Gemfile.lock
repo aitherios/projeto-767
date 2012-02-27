@@ -233,7 +233,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin
+  activeadmin (~> 0.4.2)
   coffee-rails (~> 3.2.1)
   compass-rails
   cucumber-rails (~> 1.2.1)
