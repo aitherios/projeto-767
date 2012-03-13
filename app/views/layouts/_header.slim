@@ -1,2 +1,16 @@
-#projeto-767-name.ubuntu projeto
-= image_tag 'logo.png', id: 'projeto-767-logo'
+= link_to root_path do
+  = image_tag 'logo.png', id: 'projeto-767-logo', alt: 'logo'
+
+#projeto-767-name.ubuntu = content_block_title @content_block_name
+
+ul#nav.lobster
+  li
+    = content_block_link 'projeto'
+  li
+    = content_block_link 'apoie'
+  li
+    = content_block_link 'faq'
+  li
+    = content_block_link 'tripulação'
+  li
+    = content_block_link 'patrocinadores'
