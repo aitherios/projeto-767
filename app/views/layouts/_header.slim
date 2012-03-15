@@ -1,7 +1,7 @@
 = link_to root_path do
   = image_tag 'logo.png', id: 'projeto-767-logo', alt: 'logo'
 
-#projeto-767-name.ubuntu = content_block_title @content_block_name
+#projeto-767-name.ubuntu data-content="/#{params[:content]}" = content_block_title @content_block_name
 
 ul#nav.lobster
   li
