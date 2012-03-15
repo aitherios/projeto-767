@@ -1,9 +1,15 @@
+@import "compass/css3/opacity"
+
 #header
   padding-top: 15px
 
 #projeto-767-logo
   float: right
   width: 200px
+  +opaque
+
+#projeto-767-logo:hover
+  +opacity(0.8)
 
 #projeto-767-name
   font-size: 62px
