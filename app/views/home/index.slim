@@ -1,2 +1,3 @@
 = content_block @content_block_name
-= render 'disqus' if @content_block_name == 'faq'
+- if @content_block_name == 'faq'
+  = render 'disqus', locals: { url: content_url(@content_block_name) }
