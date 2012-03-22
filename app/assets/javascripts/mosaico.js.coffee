@@ -20,8 +20,8 @@ class Mosaico
 
   placeTilesInLeftColumn: =>
     left = ($ '#header').position().left
-    tilesOnFirstLine = Math.floor left / 50
-    tilesOnFirstColumn = Math.floor ($ document).height() / 50
+    tilesOnFirstLine = (Math.floor left / @width) - 1
+    tilesOnFirstColumn = Math.floor ($ document).height() / @width
     for x in [0..(tilesOnFirstLine - 1)]
       for y in [0..tilesOnFirstColumn]
         @placeTile x * @width, y * @width
